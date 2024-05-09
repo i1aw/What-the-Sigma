@@ -19,12 +19,14 @@ header {
     display: flex;
     align-items: center;
     position: fixed;
+    
 }
 .header-icon {
     margin-left: 10px;
     font-size: 3.25vw;
     font-family: sans-serif;
     font-weight: bolder;
+    user-select: none;
 }
 
 .links {
@@ -36,7 +38,20 @@ header {
     font-family: Calibri;
     /* font-weight: bold; */
     font-size: 170%;
+    user-select: none;
 }
+
+.links a {
+    
+    cursor: pointer;
+    color: black;
+    transition: color 0.15s;
+}
+
+.links a:hover {
+    color: rgb(162, 1, 199);
+}
+
 
 .title-panel {
     /* color: rgb(255, 255, 255); */
@@ -45,6 +60,7 @@ header {
     text-decoration: line-through;
     text-decoration-color: white;
     font-family: kollektif;
+    user-select: none;
     width: 100vw;
     height: 100vh;
     display: flex;
