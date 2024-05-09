@@ -7,13 +7,22 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(".\\assets\\clouds.webp");
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px) brightness(130%);
+    flex-direction: column;
 }
 
 .title {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffffff;
     font-size: 12vw;
     font-family: kollektif;
+}
+
+.upper-title {
+    color: rgba(255, 255, 255);
+    font-size: 2.5vw;
+    font-family: kollektif;
+    transform: translateY(60%);
 }
 
 @font-face {
