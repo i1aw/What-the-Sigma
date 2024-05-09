@@ -17,6 +17,6 @@ body {
 }
 
 @font-face {
-    font-family: 'kollektif';
-    src: url("./kollektif/Kollektif-bold.ttf") format('truetype');
+    font-family: kollektif;
+    src: url('./kollektif/Kollektif-bold.ttf') format('truetype');
 }
