@@ -1,5 +1,6 @@
-body {
+html, body {
     margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
     width: 100vw;
     height: fit-content;
@@ -29,6 +30,13 @@ header {
     font-family: sans-serif;
     font-weight: bolder;
     user-select: none;
+    transition: all 0.15s;
+}
+
+.header-icon:hover {
+    color:rgb(162, 1, 199);
+    font-size: 320%;
+    
 }
 
 .links {
@@ -39,15 +47,16 @@ header {
     justify-content: right;
     font-family: Calibri;
     /* font-weight: bold; */
-    font-size: 170%;
     user-select: none;
 }
 
 .links a {
+    /* font-size: 170%; */
+    font-size: 1.75vw;
     text-decoration-line: none;
     cursor: pointer;
     color: black;
-    transition: color 0.15s;
+    transition: all 0.15s;
 }
 
 .links a:hover {
@@ -58,7 +67,7 @@ header {
 .title-panel {
     /* color: rgb(255, 255, 255); */
     color: black;
-    font-size: 15vw;
+    
     text-decoration: line-through;
     text-decoration-color: white;
     font-family: kollektif;
@@ -70,7 +79,18 @@ header {
     align-items: center;
 }
 
+.title-panel p {
+    transition: all 0.25s;
+    font-size: 15vw;
+}
+
+.title-panel p:hover {
+    font-size: 16vw;
+    color:rgb(162, 1, 199)
+}
+
 .panel {
+    padding-top: 6vh;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -79,7 +99,7 @@ header {
 }
 
 .panel-title {
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     color: black;
     font-size: 6vw;
     font-family: kollektif;
@@ -87,32 +107,37 @@ header {
 
 .sigma-background {
     background-image: url("./assets/sigma.svg");
+    background-size: cover;
     
 }
 
-.pictures {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.panel, .content {
+    box-sizing: border-box;
 }
 
 .content {
-    margin-top: 2vh;
-    color: black;
-    font-size: 1.5vw;
+    overflow-y: hidden;
+    /* margin-top: 2vh; */
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     max-width: 55%;
-    max-height: 95%;
+    max-height: 100%;
     display: flex;
+    height: min-content;
     flex-direction: column;
-    flex-grow: 1;
     align-items: center;
+    
+}
+
+.content p {
+    color: black;
+    font-size: 3vh;
 }
 
 .content img {
-    scale: 10%;
-    margin-top: 32px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     user-select: none;
     -webkit-user-drag: none;
     
