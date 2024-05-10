@@ -96,9 +96,13 @@ a, a:visited {
     transition: color 0.15s;
 }
 
-.links a:hover {
-    color: rgb(162, 1, 199);
+
+@media (pointer: fine) { 
+    .links a:hover {
+        color: rgb(162, 1, 199);
+    }
 }
+
 
 .sidebar {
     box-sizing: border-box;
@@ -132,9 +136,12 @@ a, a:visited {
     transition: color 0.15s;
 }
 
-.sidebar a:hover {
-    color: rgb(162, 1, 199);
+@media (pointer: fine) { 
+    .sidebar a:hover {
+        color: rgb(162, 1, 199);
+    }
 }
+
 
 
 .title-panel {
@@ -157,9 +164,15 @@ a, a:visited {
     font-size: 15vw;
 }
 
-.title-panel p:hover {
-    font-size: 16vw;
-    color:rgb(162, 1, 199)
+@media (pointer: fine) { 
+    .title-panel p:hover {
+        font-size: 16vw;
+        color:rgb(162, 1, 199)
+    }
+    .title-panel p:active {
+        font-size: 15.5vw;
+        color:rgb(129, 0, 158)
+    }
 }
 
 .panel {
