@@ -71,12 +71,18 @@ header {
     .hamburger-icon {
         display: inline;
     }
+    .sidebar {
+        display: inline;
+    }
 }
 @media (min-width: 600px) {
     .links a {
         display: flex;
       }
     .hamburger-icon {
+        display: none;
+    }
+    .sidebar {
         display: none;
     }
 }
@@ -176,9 +182,9 @@ a, a:visited {
 }
 
 .panel {
-    padding-top: 6vh;
+    padding-top: 60px;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
