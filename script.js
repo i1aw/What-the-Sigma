@@ -35,8 +35,8 @@ function toggleDropdownMenu() {
 function addSigmaRoomToLinks() {
   var sidebar = document.getElementById("sidebar");
   var links = document.getElementById("links");
-  links.innerHTML += "<a href=\"sigma-room.html\" name=\"sigma-link\">Sigma room</a>"
-  sidebar.innerHTML += "<a href=\"sigma-room.html\" name=\"sigma-link\">Sigma room</a>"
+  links.innerHTML += "<a href=\"sigma-room.html\" name=\"sigma-link\">Profile</a>"
+  sidebar.innerHTML += "<a href=\"sigma-room.html\" name=\"sigma-link\">Profile</a>"
 
   
 }
